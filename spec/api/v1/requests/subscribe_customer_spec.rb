@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Subscribe a Customer' do
-	# binding. pry
 	it 'customer subscribes to tea subscription' do
 		customer = Customer.create!(first_name: 'a', last_name: 'b', email: 'c', address: 'd')
 
@@ -14,7 +13,7 @@ RSpec.describe 'Subscribe a Customer' do
 						 }
 
 		headers = { content_type: 'application/json' }
-		post "/api/v1/customers/#{customer.id}/subscribe", headers: headers, params: params
+		post "/api/v1/customers/#{customer.id}/subscriptions/create", headers: headers, params: params
 
 		response_body = JSON.parse(response.body, symbolize_names: true)
 		subscription = response_body[:data]
