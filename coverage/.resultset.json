@@ -332,6 +332,20 @@
           null,
           null,
           null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -435,6 +449,38 @@
           null
         ]
       },
+      "/Users/turingtjc/Turing/4Module/take_home/app/controllers/api/v1/customers_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/4Module/take_home/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/4Module/take_home/app/serializers/customer_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/turingtjc/Turing/4Module/take_home/app/controllers/api/v1/tea_subscriptions_controller.rb": {
         "lines": [
           1,
@@ -459,12 +505,6 @@
           null
         ]
       },
-      "/Users/turingtjc/Turing/4Module/take_home/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/Users/turingtjc/Turing/4Module/take_home/app/serializers/tea_subscription_serializer.rb": {
         "lines": [
           1,
@@ -474,6 +514,6 @@
         ]
       }
     },
-    "timestamp": 1667426581
+    "timestamp": 1667428056
   }
 }

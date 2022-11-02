@@ -4,6 +4,7 @@
 * An endpoint to subscribe a customer to a tea subscription
 * An endpoint to cancel a customer’s tea subscription
 * An endpoint to see all of a customer’s subsciptions (active and cancelled)
+* An endpoint to create a customer
 
 ## API Endpoints
 
@@ -73,6 +74,22 @@ status: accepted
 }
 ```
 
+* POST "http://localhost:3000/api/v1/customers?first_name=tee&last_name=caud&email=no&address=no"
+```JSON
+{
+    "data": {
+        "id": "3",
+        "type": "customer",
+        "attributes": {
+            "id": 3,
+            "first_name": "tee",
+            "last_name": "caud",
+            "email": "no",
+            "address": "no"
+        }
+    }
+}
+```
 #### Contributors
 Tyler Caudill
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/tyler-caudill-75885b240/)  [![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TeeCaud)
