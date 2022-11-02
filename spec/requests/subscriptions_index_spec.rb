@@ -11,7 +11,7 @@ RSpec.describe 'Subscriptions Index' do
 		customer_subscription1 = CustomerSubscription.create!(customer_id: customer.id, subscription_id: subscription2.id)
 		not_customer_subscription = CustomerSubscription.create!(customer_id: not_customer.id, subscription_id: subscription2.id)
 
-		get "/api/v1/customers/#{customer.id}/subscriptions"
+		get "/api/v1/customers/#{customer.id}/customer_subscriptions"
 
 		response_body = JSON.parse(response.body, symbolize_names: true)
 		subscriptions = response_body[:data]

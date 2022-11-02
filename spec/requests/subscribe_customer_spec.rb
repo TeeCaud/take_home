@@ -14,7 +14,7 @@ RSpec.describe 'Subscribe a Customer' do
 						 }
 
 		headers = { content_type: 'application/json' }
-		post "/api/v1/customers/#{customer.id}/subscriptions/create", headers: headers, params: params
+		post "/api/v1/customers/#{customer.id}/customer_subscriptions", headers: headers, params: params
 
 		response_body = JSON.parse(response.body, symbolize_names: true)
 		subscription = response_body[:data]

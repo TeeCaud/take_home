@@ -7,29 +7,36 @@
 
 ## API Endpoints
 
-* POST "http://localhost:3000/api/v1/customers/#{customer.id}/subscriptions/create"
+* POST "http://localhost:3000/api/v1/customers/1/customer_subscriptions?title=abc&price=123&status=active&frequency=monthly&tea_id=1"
 
 ```JSON
 {
-    'title': 'abc',
-    'price': '123',
-    'status': 'active',
-    'frequency': 'monthly',
-    'tea_id': tea.id
+    "data": {
+        "id": "3",
+        "type": "subscription",
+        "attributes": {
+            "title": "abc",
+            "price": "123",
+            "status": "active",
+            "frequency": "monthly",
+            "tea_id": 1
+        }
+    }
 }
 ```
 
-* DELETE "http://localhost:3000/api/v1/customers/#{customer.id}/subscriptions/#{customer_subscription1.id}/destroy"
+* DELETE "http://localhost:3000/api/v1/customers/1/customer_subscriptions/1"
 
 ```JSON
 {
     "id": 1,
     "customer_id": 1,
     "subscription_id": 1
-} status: accepted
+}
+status: accepted
 ```
 
-* GET "http://localhost:3000/api/v1/customers/1/subscriptions"
+* GET "http://localhost:3000/api/v1/customers/1/customer_subscriptions"
 ```JSON
 {
     "data": [

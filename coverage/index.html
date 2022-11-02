@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-02T11:09:16-05:00">2022-11-02T11:09:16-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-02T15:32:56-05:00">2022-11-02T15:32:56-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.16
+         1.17
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>177</b> relevant lines,
-    <span class="green"><b>177</b> lines covered</span> and
+    <b>175</b> relevant lines,
+    <span class="green"><b>175</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -73,7 +73,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c1aa207b6bdf9562eb848ea3085de6f561101edf" class="src_link" title="app/controllers/api/v1/customer_subscriptions_controller.rb">app/controllers/api/v1/customer_subscriptions_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">20</td>
+            <td class="cell--number">21</td>
             <td class="cell--number">10</td>
             <td class="cell--number">10</td>
             <td class="cell--number">0</td>
@@ -282,9 +282,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#718f9cdf5024ddc4a863f37084a078c07671891b" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">7</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">5</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -450,7 +450,7 @@
 
             
 
-            <code class="ruby">		render json: SubscriptionSerializer.new(Customer.find(params[:id]).subscriptions)</code>
+            <code class="ruby">		render json: SubscriptionSerializer.new(Customer.find(params[:customer_id]).subscriptions)</code>
           </li>
         </div>
       
@@ -488,24 +488,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">		# binding.pry</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">		render json: SubscriptionSerializer.new(Customer.find(params[:id]).subscriptions.create!(subscription_params)), status: :created</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="9">
-            
-            
-
-            
-
-            <code class="ruby">	end</code>
+            <code class="ruby">		render json: SubscriptionSerializer.new(Customer.find(params[:customer_id]).subscriptions.create!(subscription_params)), status: :created</code>
           </li>
         </div>
       
@@ -516,18 +516,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">	end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="11">
+            
             
 
             
 
-            <code class="ruby">	def destroy</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -538,18 +538,18 @@
 
             
 
-            <code class="ruby">		render json: CustomerSubscription.find(params[:id]).destroy, status: :accepted</code>
+            <code class="ruby">	def destroy</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">	end</code>
+            
+
+            <code class="ruby">		render json: CustomerSubscription.find(params[:id]).destroy, status: :accepted</code>
           </li>
         </div>
       
@@ -560,12 +560,23 @@
 
             
 
+            <code class="ruby">	end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="15">
+          <li class="covered" data-hits="1" data-linenumber="16">
             <span class="hits">1</span>
             
 
@@ -576,7 +587,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="16">
+          <li class="never" data-hits="" data-linenumber="17">
             
             
 
@@ -587,7 +598,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="17">
+          <li class="covered" data-hits="1" data-linenumber="18">
             <span class="hits">1</span>
             
 
@@ -598,7 +609,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="18">
+          <li class="covered" data-hits="1" data-linenumber="19">
             <span class="hits">1</span>
             
 
@@ -609,7 +620,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="19">
+          <li class="never" data-hits="" data-linenumber="20">
             
             
 
@@ -620,7 +631,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="never" data-hits="" data-linenumber="21">
             
             
 
@@ -3407,8 +3418,8 @@
     
 
     <div class="t-line-summary">
-      <b>7</b> relevant lines.
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>5</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -3459,7 +3470,7 @@
 
             
 
-            <code class="ruby">			resources :customers</code>
+            <code class="ruby">			resources :customers do</code>
           </li>
         </div>
       
@@ -3470,34 +3481,23 @@
 
             
 
-            <code class="ruby">			post &#39;customers/:id/subscriptions/create&#39;, to: &#39;customer_subscriptions#create&#39;</code>
+            <code class="ruby">				resources :customer_subscriptions, only: [:create, :destroy, :index]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="6">
+            
             
 
             
 
-            <code class="ruby">			delete &quot;customers/:id/subscriptions/:id/destroy&quot;, to: &#39;customer_subscriptions#destroy&#39;</code>
+            <code class="ruby">			end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">			get &quot;customers/:id/subscriptions&quot;, to: &#39;customer_subscriptions#index&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="8">
+          <li class="never" data-hits="" data-linenumber="7">
             
             
 
@@ -3508,7 +3508,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
@@ -3519,7 +3519,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -4461,7 +4461,7 @@
 
             
 
-            <code class="ruby">		delete &quot;/api/v1/customers/#{customer.id}/subscriptions/#{customer_subscription1.id}/destroy&quot;</code>
+            <code class="ruby">		delete &quot;/api/v1/customers/#{customer.id}/customer_subscriptions/#{customer_subscription1.id}&quot;</code>
           </li>
         </div>
       
@@ -4734,7 +4734,7 @@
 
             
 
-            <code class="ruby">		post &quot;/api/v1/customers/#{customer.id}/subscriptions/create&quot;, headers: headers, params: params</code>
+            <code class="ruby">		post &quot;/api/v1/customers/#{customer.id}/customer_subscriptions&quot;, headers: headers, params: params</code>
           </li>
         </div>
       
@@ -5073,7 +5073,7 @@
 
             
 
-            <code class="ruby">		get &quot;/api/v1/customers/#{customer.id}/subscriptions&quot;</code>
+            <code class="ruby">		get &quot;/api/v1/customers/#{customer.id}/customer_subscriptions&quot;</code>
           </li>
         </div>
       

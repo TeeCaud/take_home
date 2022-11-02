@@ -14,7 +14,7 @@ RSpec.describe 'Cancel Subscription' do
 		expect(customer.subscriptions.count).to eq(2)
 		expect(not_customer.subscriptions.count).to eq(1)
 
-		delete "/api/v1/customers/#{customer.id}/subscriptions/#{customer_subscription1.id}/destroy"
+		delete "/api/v1/customers/#{customer.id}/customer_subscriptions/#{customer_subscription1.id}"
 		expect(response).to be_successful
 		expect(customer.subscriptions.count).to eq(1)
 		expect(not_customer.subscriptions.count).to eq(1)

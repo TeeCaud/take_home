@@ -1,11 +1,12 @@
 class Api::V1::CustomerSubscriptionsController < ApplicationController
 
 	def index
-		render json: SubscriptionSerializer.new(Customer.find(params[:id]).subscriptions)
+		render json: SubscriptionSerializer.new(Customer.find(params[:customer_id]).subscriptions)
 	end
 
 	def create
-		render json: SubscriptionSerializer.new(Customer.find(params[:id]).subscriptions.create!(subscription_params)), status: :created
+		# binding.pry
+		render json: SubscriptionSerializer.new(Customer.find(params[:customer_id]).subscriptions.create!(subscription_params)), status: :created
 	end
 
 	def destroy
