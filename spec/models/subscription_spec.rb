@@ -12,6 +12,7 @@ RSpec.describe Subscription, type: :model do
 	end
 
 	describe 'associations' do
+		it { should belong_to(:tea) }
 		it { should have_many :customers }
 	end
 end

@@ -9,12 +9,12 @@ class Api::V1::CustomerSubscriptionsController < ApplicationController
 	end
 
 	def destroy
-		Subscription.find(params[:id]).destroy
+		render json: CustomerSubscription.find(params[:id]).destroy, status: :accepted
 	end
 
 	private
 
 	def subscription_params
-		params.permit(:title, :price, :status, :frequency, :customer_id)
+		params.permit(:title, :price, :status, :frequency, :tea_id)
 	end
 end

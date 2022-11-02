@@ -4,5 +4,7 @@ class Subscription < ApplicationRecord
 	validates :status, inclusion: ["active", "cancelled"]
 	validates_presence_of :frequency
 
-	has_many :customers
+	belongs_to :tea
+	has_many :customer_subscriptions
+	has_many :customers, through: :customer_subscriptions
 end

@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Subscribe a Customer' do
 	it 'customer subscribes to tea subscription' do
+		tea = Tea.create!(title: "Tims Tea", description: "yummy", temperature: '75', brew_time: '19')
 		customer = Customer.create!(first_name: 'a', last_name: 'b', email: 'c', address: 'd')
 
 		params = {
@@ -9,7 +10,7 @@ RSpec.describe 'Subscribe a Customer' do
 							'price': '123',
 							'status': 'active',
 							'frequency': 'monthly',
-							'customer_id': customer.id
+							'tea_id': tea.id
 						 }
 
 		headers = { content_type: 'application/json' }
