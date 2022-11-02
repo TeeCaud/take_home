@@ -17,7 +17,7 @@ RSpec.describe 'Subscriptions Index' do
 		subscriptions = response_body[:data]
 		expect(response).to be_successful
 		expect(subscriptions.count).to eq(2)
-# binding.pry
+
 		subscriptions.each do |sub|
 			expect(sub).to have_key(:id)
 			expect(sub).to have_key(:type)
