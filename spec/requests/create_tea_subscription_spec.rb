@@ -10,13 +10,15 @@ RSpec.describe 'Subscribe a Customer' do
 							'price': '123',
 							'status': 'active',
 							'frequency': 'monthly',
-							'tea_id': tea.id
+							'tea_id': tea.id,
+							'customer_id': customer.id
 						 }
 
 		headers = { content_type: 'application/json' }
-		post "/api/v1/customers/#{customer.id}/customer_subscriptions", headers: headers, params: params
+		post "/api/v1/customers/#{customer.id}/tea_subscriptions", headers: headers, params: params
 
 		response_body = JSON.parse(response.body, symbolize_names: true)
+
 		subscription = response_body[:data]
 
 		expect(response).to be_successful

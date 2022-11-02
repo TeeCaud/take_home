@@ -9,6 +9,6 @@ RSpec.describe Tea, type: :model do
 	end
 
 	describe 'associations' do
-		it { should have_many :subscriptions }
+		it { should have_many :tea_subscriptions }
 	end
 end

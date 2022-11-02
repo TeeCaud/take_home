@@ -244,69 +244,11 @@
           1,
           null,
           1,
-          1,
-          null,
           null
         ]
       },
       "/Users/turingtjc/Turing/4Module/take_home/app/models/application_record.rb": {
         "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/turingtjc/Turing/4Module/take_home/spec/models/customer_subscription_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/turingtjc/Turing/4Module/take_home/app/models/customer_subscription.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/turingtjc/Turing/4Module/take_home/spec/models/subscription_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          2,
-          null,
-          2,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/turingtjc/Turing/4Module/take_home/app/models/subscription.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
           1,
           1,
           null
@@ -342,7 +284,58 @@
           null
         ]
       },
-      "/Users/turingtjc/Turing/4Module/take_home/spec/requests/cancel_subscription_spec.rb": {
+      "/Users/turingtjc/Turing/4Module/take_home/spec/models/tea_subscription_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/4Module/take_home/app/models/tea_subscription.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/4Module/take_home/spec/requests/create_customer_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/4Module/take_home/spec/requests/create_tea_subscription_spec.rb": {
         "lines": [
           1,
           null,
@@ -350,9 +343,46 @@
           1,
           1,
           1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
           1,
           1,
           1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/turingtjc/Turing/4Module/take_home/spec/requests/destroy_tea_subscription_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
           1,
           1,
           1,
@@ -368,52 +398,17 @@
           null
         ]
       },
-      "/Users/turingtjc/Turing/4Module/take_home/spec/requests/subscribe_customer_spec.rb": {
+      "/Users/turingtjc/Turing/4Module/take_home/spec/requests/tea_subscriptions_index_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
           1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           1,
           1,
           null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/turingtjc/Turing/4Module/take_home/spec/requests/subscriptions_index_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
           1,
           1,
           1,
@@ -426,6 +421,7 @@
           1,
           null,
           1,
+          2,
           2,
           2,
           2,
@@ -439,7 +435,7 @@
           null
         ]
       },
-      "/Users/turingtjc/Turing/4Module/take_home/app/controllers/api/v1/customer_subscriptions_controller.rb": {
+      "/Users/turingtjc/Turing/4Module/take_home/app/controllers/api/v1/tea_subscriptions_controller.rb": {
         "lines": [
           1,
           null,
@@ -448,7 +444,6 @@
           null,
           null,
           1,
-          null,
           1,
           null,
           null,
@@ -470,7 +465,7 @@
           null
         ]
       },
-      "/Users/turingtjc/Turing/4Module/take_home/app/serializers/subscription_serializer.rb": {
+      "/Users/turingtjc/Turing/4Module/take_home/app/serializers/tea_subscription_serializer.rb": {
         "lines": [
           1,
           1,
@@ -479,6 +474,6 @@
         ]
       }
     },
-    "timestamp": 1667421252
+    "timestamp": 1667426581
   }
 }

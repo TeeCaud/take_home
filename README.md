@@ -7,19 +7,20 @@
 
 ## API Endpoints
 
-* POST "http://localhost:3000/api/v1/customers/1/customer_subscriptions?title=abc&price=123&status=active&frequency=monthly&tea_id=1"
+* POST "http://localhost:3000/api/v1/customers/1/tea_subscriptions?title=abc&price=123&status=active&frequency=monthly&tea_id=1&customer_id=1"
 
 ```JSON
 {
     "data": {
-        "id": "3",
-        "type": "subscription",
+        "id": "4",
+        "type": "tea_subscription",
         "attributes": {
             "title": "abc",
             "price": "123",
             "status": "active",
             "frequency": "monthly",
-            "tea_id": 1
+            "tea_id": 1,
+            "customer_id": 1
         }
     }
 }
@@ -30,36 +31,42 @@
 ```JSON
 {
     "id": 1,
-    "customer_id": 1,
-    "subscription_id": 1
+    "title": "test",
+    "price": "23",
+    "status": "active",
+    "frequency": "never",
+    "tea_id": 1,
+    "customer_id": 1
 }
 status: accepted
 ```
 
-* GET "http://localhost:3000/api/v1/customers/1/customer_subscriptions"
+* GET "http://localhost:3000/api/v1/customers/1/tea_subscriptions"
 ```JSON
 {
     "data": [
         {
             "id": "1",
-            "type": "subscription",
+            "type": "tea_subscription",
             "attributes": {
                 "title": "test",
                 "price": "23",
                 "status": "active",
                 "frequency": "never",
-                "tea_id": 1
+                "tea_id": 1,
+                "customer_id": 1
             }
         },
         {
             "id": "2",
-            "type": "subscription",
+            "type": "tea_subscription",
             "attributes": {
                 "title": "delete_me",
                 "price": "23",
                 "status": "cancelled",
                 "frequency": "never",
-                "tea_id": 1
+                "tea_id": 1,
+                "customer_id": 1
             }
         }
     ]
