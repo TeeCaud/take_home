@@ -6,6 +6,7 @@
 * An endpoint to see all of a customer’s subsciptions (active and cancelled)
 * An endpoint to create a customer
 * An endpoint to delete a customer
+* An endpoint to update a customer
 
 ## API Endpoints
 
@@ -102,6 +103,23 @@ status: accepted
     "address": "d"
 }
 status: accepted
+```
+
+* PATCH "http://localhost:3000/api/v1/customers/1
+```JSON
+{
+    "data": {
+        "id": "1",
+        "type": "customer",
+        "attributes": {
+            "id": 1,
+            "first_name": "tee",
+            "last_name": "b",
+            "email": "c",
+            "address": "d"
+        }
+    }
+}
 ```
 
 #### Contributors
